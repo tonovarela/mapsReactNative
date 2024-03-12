@@ -12,6 +12,7 @@ export const usePermissionStore = create<PermissionState>()(set => ({
     locationStatus: 'undeterminated',
     checkLocationPermission : async () => {
         const status = await checkLocationPermission();
+        console.log(status);
         set({ locationStatus: status });
         return status;
     },
