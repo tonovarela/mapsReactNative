@@ -20,7 +20,7 @@ export const MapsScreen = () => {
 
   return (
     <View style={styles.container}>      
-      <Map initialLocation={lastKnowLocation} showUserLocation  />      
+      <Map initialLocation={lastKnowLocation} showUserLocation  />         
     </View>
   )
 }
